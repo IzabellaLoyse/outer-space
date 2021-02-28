@@ -1,0 +1,18 @@
+/* ==========================================================================
+      #BODY
+   ========================================================================== */
+
+ /*
+ * Body section element settings.
+ * 
+ */
+
+ body {
+  background-color: map-get($colors,page-theme-color);
+  border-style: solid;
+  border-width: 0.5rem 0 0;
+  border-top-width: 0.5rem;
+  border-image: linear-gradient(to left bottom, #6952e0, #496ced, #2081f5, #0094f8, #00a5f7, #00b2f9, #00bff9, #23cbf8, #1dd8f9, #2ce4f8, #44f0f5, #5ffbf1) 1;
+  line-height: 1.5em;
+  overflow: hidden;
+ }

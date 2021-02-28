@@ -1,0 +1,41 @@
+@charset 'utf-8';
+
+/*  
+* 1 - Note: the CSS organization, SASS / SCSS followed the organization
+*     established by the CSS and SASS Guidelines.
+* 2 - CSS properties followed Concentric CSS standards.
+*/
+
+/*==============================================================================
+    TOOLS 
+==============================================================================*/
+
+@import '../sass/tools/tools.maps';
+
+
+
+
+
+/*==============================================================================
+   GENERIC
+==============================================================================*/
+@import '../sass/generic/generic.box-sizing';
+@import '../sass/generic/generic.reset';
+
+
+
+
+
+
+/*==============================================================================
+    ELEMENTS
+==============================================================================*/
+@import '../sass/elements/elements.page';
+@import '../sass/elements/elements.body';
+@import '../sass/elements/elements.images';
+
+
+
+
+
+@import '../sass/layout/layout.header';

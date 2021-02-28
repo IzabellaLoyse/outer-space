@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #IMAGES
+   ========================================================================== */
+
+/*
+*
+* Settings for images to be responsive.
+* 
+* 1 - Remove the border from the image.
+* 2 - Make sure that the image always fills the entire width of the 
+*     viewing window.
+* 3 - Make sure that the image has an auto height in the viewing window.
+* 4 - Generates a block element box.
+*
+*/
+
+img {
+  border: none; //[1]
+  max-width: 100%; //[2]
+  height: auto; //[3]
+  display: block; //[4]
+}
