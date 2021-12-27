@@ -1,0 +1,18 @@
+/*----- COLOR PALETTE -----*/
+
+$colors: (
+  'page-theme-color': rgb(39, 39, 44),
+  'page-title-color': rgb(38, 123, 227),
+  'color-secondary-title': rgb(73, 108, 237),
+  'color-paragraph': rgb(187, 175, 197),
+  'primary-color': rgb(0, 165, 247),
+);
+
+/*----- TYPOGRAPHY -----*/
+
+$font-weight: (
+  'bold': 700,
+  'regular': 400,
+  'light': 300,
+  'thin': 100,
+);

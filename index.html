@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/global.css" />
+    <title>Outer Space</title>
+  </head>
+
+  <body>
+
+    <header class="c-page-header">
+      <h1 class="c-page-header__title">
+        <span class="c-letter__O">O</span>uter
+      </h1>
+
+      <img
+        src="./src/assets/icon/logo-planet.svg"
+        alt="Ícone do planeta Urano"
+        class="c-logo-planet"
+      />
+
+      <h1 class="c-page-header__title c-spacing">
+        <span class="c-letter__S">S</span>pace
+      </h1>
+
+      <p class="c-page-header__description">
+        <span classe="c-border"></span>
+        O universo é fascinante por possuir esplêndida beleza escondida em seu
+        interior. Observe o encanto do universo através de imagens, todos os
+        dias uma distinta fotografia será exibida.
+      </p>
+    </header>
+
+    <main class="l-page-main">
+      
+      <section class="l-about-space">
+        <h2 class="c-about-space__title">Fotografia do dia</h2>
+
+        <figure>
+          <img src="" alt="" class="c-about-space__image js-url-image" />
+          <figcaption class="js-title-image"></figcaption>
+        </figure>
+
+        <div class="c-about-space__date">
+          <label for="date">Data : </label>
+          <input type="date" name="date" id="date" class="js-date" value="" />
+        </div>
+
+        <div class="c-container-space">
+          <h2 class="c-container-space__title">
+            Conhecendo um pouco sobre a fotografia
+          </h2>
+
+          <p class="c-container-space__description js-explanation"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

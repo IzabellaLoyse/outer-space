@@ -1,0 +1,36 @@
+.c-page-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
+
+  &__title {
+    color: map-get($colors, 'page-title-color');
+    font-size: 3rem;
+    font-weight: map-get($font-weight, 'regular');
+    letter-spacing: 1rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+    position: relative;
+  }
+}
+
+.c-letter__O,
+.c-letter__S {
+  color: map-get($colors, 'primary-color');
+  font-size: 4.5rem;
+  font-weight: map-get($font-weight, bold);
+  padding-bottom: 2rem;
+}
+
+.c-spacing {
+  padding-left: 5rem;
+}
+
+.c-logo-planet {
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+

@@ -1,0 +1,22 @@
+{
+  "name": "outer-space",
+  "version": "1.0.0",
+  "description": "Project using NASA apod API",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch src/sass:public/css --style compressed"
+  },
+  "keywords": [],
+  "author": "Izabella Loyse Cândido",
+  "license": "MIT",
+  "url": "https://github.com/IzabellaLoyse/outer-space",
+  "dependencies": {
+    "sass": "^1.45.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3"
+  }
+}
