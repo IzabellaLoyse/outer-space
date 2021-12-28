@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 6rem;
-  padding-top: 3rem;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
 
   &__title {
     color: map-get($colors, 'page-title-color');
@@ -22,7 +22,7 @@
     letter-spacing: 0.02em;
     line-height: 2rem;
     max-width: 600px;
-    padding-top: 4rem;
+    padding-top: 2rem;
     text-align: center;
     font-size: 1.3rem;
 
@@ -60,7 +60,7 @@
 .c-letter__O,
 .c-letter__S {
   color: map-get($colors, 'primary-color');
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: map-get($font-weight, bold);
   padding-bottom: 2rem;
 }
@@ -70,6 +70,6 @@
 }
 
 .c-logo-planet {
-  width: 6rem;
+  width: 5.5rem;
   margin-bottom: 2rem;
 }
