@@ -3,9 +3,9 @@
 }
 
 .c-container-space__description {
-  color: map-get($colors, color-paragraph);
+  color: map-get($colors, 'color-paragraph');
   font-size: 1.1rem;
-  font-weight: map-get($font-weight, light);
+  font-weight: map-get($font-weight, 'light');
   letter-spacing: 0.02em;
   line-height: 2rem;
   max-width: 600px;
