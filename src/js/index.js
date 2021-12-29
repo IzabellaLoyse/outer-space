@@ -5,7 +5,6 @@ const getDataApod = async () => {
   try {
     const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${APY_KEY} `);
     const data = await response.json();
-    console.log(data);
     return data;
   } catch (error) {
     throw new Error(error);
@@ -29,6 +28,7 @@ const loadData = async () => {
   } else {
     urlIframe.setAttribute('src', url);
     urlIframe.setAttribute('alt', title);
+    urlIframe.classList.add('.c-about-space__video--actived');
   }
 
   description.insertAdjacentHTML('afterbegin', explanation);
