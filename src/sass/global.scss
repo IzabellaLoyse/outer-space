@@ -17,8 +17,10 @@
 
 @import './components/Header/Header';
 @import './components/AboutSpace/AboutSpace';
+@import './components/SpaceTitle/SpaceTitle';
 @import './components/ContainerSpace/ContainerSpace';
 
 /*------ LAYOUT ------*/
 
 @import './layout/PageMain';
+@import './layout/PageLayout';
