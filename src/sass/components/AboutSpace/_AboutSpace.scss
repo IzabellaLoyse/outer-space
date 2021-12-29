@@ -37,6 +37,14 @@
   width: 600px;
 }
 
+.c-about-space__figcaption {
+  color: map-get($colors, 'page-title-color');
+  font-size: 1.3rem;
+  font-weight: map-get($font-weight, 'regular');
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
 .c-about-space__date {
   padding-bottom: 2rem;
 }
