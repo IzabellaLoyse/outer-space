@@ -1,0 +1,64 @@
+.c-about-space {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c-space-title {
+  color: map-get($colors, 'color-secondary-title');
+  font-size: 2.1rem;
+  font-weight: map-get($font-weight, ' regular');
+  letter-spacing: 0.05em;
+  padding-bottom: 3rem;
+
+  &::after {
+    content: '';
+    height: 2px;
+    width: 5rem;
+    background: linear-gradient(
+      to left,
+      #2579e2,
+      #3471e4,
+      #4668e4,
+      #575ee3,
+      #6952e0
+    );
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
+.c-about-space__image {
+  background-position: center;
+  background-size: cover;
+  max-height: 560px;
+  padding-bottom: 5%;
+  width: 600px;
+}
+
+.c-about-space__date {
+  padding-bottom: 2rem;
+}
+
+.c-about-space__label {
+  color: map-get($colors, 'page-title-color');
+  font-size: 1.4rem;
+  font-weight: map-get($font-weight, 'regular');
+  margin-right: 2rem;
+}
+
+.c-about-space__input {
+  background-color: map-get($colors, 'secondary-color');
+  border-radius: 4px;
+  border: 2px solid map-get($colors, 'light-gray-color');
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.25em 0.5em;
+  transition: 180ms box-shadow ease-in-out;
+
+  &:focus {
+    border-color: map-get($colors, 'page-title-color');
+    outline: 3px solid transparent;
+  }
+}

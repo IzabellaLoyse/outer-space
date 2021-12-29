@@ -1,18 +1,24 @@
 @charset 'utf-8';
 
-/*------VENDOR------*/
+/*------ VENDOR ------*/
 
 @import './vendor/Normalize/Normalize';
 
-/*------ABSTRACTS------*/
+/*------ ABSTRACTS ------*/
 
 @import './abstracts/Theme';
 
 
-/*------BASE------*/
+/*------ BASE ------*/
 
 @import './base/Reset';
 
-/*------COMPONENTS------*/
+/*------ COMPONENTS ------*/
 
 @import './components/Header/Header';
+@import './components/AboutSpace/AboutSpace';
+
+
+/*------ LAYOUT ------*/
+
+@import './layout/PageMain';
