@@ -5,41 +5,24 @@
   justify-content: center;
 }
 
-.c-space-title {
-  color: map-get($colors, 'color-secondary-title');
-  font-size: 2.1rem;
-  font-weight: map-get($font-weight, ' regular');
-  letter-spacing: 0.05em;
-  padding-bottom: 3rem;
-
-  &::after {
-    content: '';
-    height: 2px;
-    width: 5rem;
-    background: linear-gradient(
-      to left,
-      #2579e2,
-      #3471e4,
-      #4668e4,
-      #575ee3,
-      #6952e0
-    );
-    display: block;
-    margin-top: 1rem;
-  }
-}
-
 .c-about-space__image {
   background-position: center;
   background-size: cover;
-  max-height: 560px;
+  max-height: 56%;
   padding-bottom: 5%;
-  width: 600px;
+  width: 37.5rem;
+}
+
+.c-about-space__video {
+  height: 31.25rem;
+  max-height: 56%;
+  padding-bottom: 5%;
+  width: 37.5rem;
 }
 
 .c-about-space__figcaption {
   color: map-get($colors, 'page-title-color');
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: map-get($font-weight, 'regular');
   padding-bottom: 2rem;
   text-align: center;

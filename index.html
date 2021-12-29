@@ -15,6 +15,8 @@
 
   <body>
 
+    <section class="l-page-layout">
+
     <header class="c-page-header">
       <h1 class="c-page-header__title">
         <span class="c-letter__O">O</span>uter
@@ -38,18 +40,26 @@
       </p>
     </header>
 
-
     <main class="l-page-main">
 
       <section class="c-about-space">
-        <h2 class="c-space-title">Fotografia do dia</h2>
+        <h2 class="c-space-title">Mídia do dia</h2>
 
         <figure>
           <img src="" alt="" class="c-about-space__image js-url-image" />
-          <figcaption class="c-about-space__figcaption 
-          js-title-image">
-        </figcaption>
+          <figcaption
+            class="c-about-space__figcaption js-title-image"> 
+          </figcaption>
         </figure>
+
+        <iframe
+          class="c-about-space__video js-url-iframe"
+          src=""
+          title=""
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
 
         <div class="c-about-space__date">
           <label class="c-about-space__label" for="date">Data : </label>
@@ -65,14 +75,15 @@
 
         <div class="c-container-space">
           <h2 class="c-space-title c-container-space__title">
-            Conhecendo um pouco sobre a fotografia
+            Conhecendo um pouco sobre o universo
           </h2>
 
           <p class="c-container-space__description js-explanation"></p>
         </div>
       </section>
     </main>
+  </section>
 
-    <script src="./src/js/index.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>
