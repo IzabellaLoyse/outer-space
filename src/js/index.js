@@ -19,7 +19,7 @@ const loadData = async () => {
 
   const data = await getDataApod();
   const {
-    explanation, title, url, media_type,
+    explanation, title, url, media_type,date
   } = data;
 
   if (media_type === 'image') {
