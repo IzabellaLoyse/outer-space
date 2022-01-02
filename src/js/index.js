@@ -1,38 +1,52 @@
-// eslint-disable-next-line import/extensions
-import APY_KEY from './service.js';
+import getDataApod from './service.js';
 
-const getDataApod = async () => {
+const formattedDate = (valueDate) => {
+  const dateInput = document.querySelector('.js-datepicker');
+  const currentDate = new Date().toISOString().slice(0, 10);
+
+  dateInput.value = valueDate || currentDate;
+  dateInput.max = currentDate;
+  dateInput.min = '1995-06-16';
+};
+
+const handleApodData = async () => {
+  const description = document.querySelector('.js-explanation');
+  const titleMedia = document.querySelector('.js-title-image');
+  const urlImage = document.querySelector('.js-url-image');
+  const urlIframe = document.querySelector('.js-url-iframe');
+
   try {
-    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${APY_KEY} `);
-    const data = await response.json();
-    return data;
+    const data = await getDataApod();
+    const {
+      title, hdurl, media_type, url,
+      explanation, date,
+    } = data;
+
+    if (title !== titleMedia.textContent) titleMedia.textContent = '';
+
+    formattedDate(date);
+
+    if (media_type === 'image') {
+      urlImage.setAttribute('src', hdurl);
+      urlImage.setAttribute('alt', title);
+      urlIframe.classList.remove('c-about-space__video--actived');
+    } else {
+      urlIframe.setAttribute('src', url);
+      urlIframe.setAttribute('alt', title);
+      urlImage.classList.add('c-about-space__video--disabled');
+      urlIframe.classList.add('c-about-space__video--actived');
+    }
+
+    titleMedia.insertAdjacentHTML('afterbegin', `${title}`);
+    description.insertAdjacentHTML('afterbegin', `${explanation}`);
   } catch (error) {
     throw new Error(error);
   }
 };
 
-const loadData = async () => {
-  const description = document.querySelector('.js-explanation');
-  const titleImage = document.querySelector('.js-title-image');
-  const urlImage = document.querySelector('.js-url-image');
-  const urlIframe = document.querySelector('.js-url-iframe');
+handleApodData();
 
-  const data = await getDataApod();
-  const {
-    explanation, title, url, media_type,date
-  } = data;
-
-  if (media_type === 'image') {
-    urlImage.setAttribute('src', url);
-    urlImage.setAttribute('alt', title);
-  } else {
-    urlIframe.setAttribute('src', url);
-    urlIframe.setAttribute('alt', title);
-    urlIframe.classList.add('.c-about-space__video--actived');
-  }
-
-  description.insertAdjacentHTML('afterbegin', explanation);
-  titleImage.insertAdjacentHTML('afterbegin', title);
-};
-
-loadData();
+document.querySelector('.js-datepicker').addEventListener('change', (event) => {
+  event.preventDefault();
+  handleApodData();
+});
