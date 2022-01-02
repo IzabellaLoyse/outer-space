@@ -18,8 +18,7 @@ const handleApodData = async () => {
   try {
     const data = await getDataApod();
     const {
-      title, hdurl, media_type, url,
-      explanation, date,
+      title, hdurl, media_type, url, explanation, date,
     } = data;
 
     if (title !== titleMedia.textContent) titleMedia.textContent = '';
